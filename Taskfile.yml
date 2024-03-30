@@ -1,0 +1,42 @@
+version: '3'
+
+tasks:
+  install:
+    run: once
+    desc: "Install dependencies locally."
+    sources:
+      - "pyproject.toml"
+      - "vite/package.json"
+    generates:
+      - "vite/node_modules"
+      - ".venv"
+    cmds:
+      - "rye sync"
+      - "rye run flask --app theocourtdotcom vite install"
+
+  dev-flask:
+    deps: [install]
+    internal: true
+    cmd: "rye run flask --app theocourtdotcom run --debug"
+  dev-vite:
+    deps: [install]
+    internal: true
+    cmd: "rye run flask --app theocourtdotcom vite start"
+  dev:
+    desc: "Start a development server that automatically reloads code and rebuilds assets."
+    deps: [dev-flask, dev-vite]
+
+  build:
+    deps: [install]
+    desc: "Build static assets for production."
+    cmd: "rye run flask --app theocourtdotcom vite build"
+    sources:
+      - "vite/src/**/*"
+      - "vite/*.js"
+    generates:
+      - "vite/dist"
+  prod:
+    deps: [install, build]
+    desc: "Run a production server."
+    cmds:
+      - "rye run python -m theocourtdotcom"
