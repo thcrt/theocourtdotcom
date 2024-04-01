@@ -4,16 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="baa10029-281f-4b33-a3b1-387352cf91cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.task/checksum/install" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taskfile.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/bun.lockb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite/vite.config.js" afterDir="false" />
+    <list default="true" id="baa10029-281f-4b33-a3b1-387352cf91cf" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/theocourtdotcom/templates/_base.jinja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/theocourtdotcom/templates/index.jinja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/src/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vite/src/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/theocourtdotcom.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/theocourtdotcom.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskfile.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Taskfile.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theocourtdotcom/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/theocourtdotcom/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theocourtdotcom/templates/index.j2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theocourtdotcom/templates/quote.j2" beforeDir="false" afterPath="$PROJECT_DIR$/src/theocourtdotcom/templates/quote.jinja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/vite/src/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,25 +58,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/theo/Code/theocourtdotcom/src/theocourtdotcom/static",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/theo/Code/theocourtdotcom/src/theocourtdotcom/templates&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PythonContentEntriesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/theocourtdotcom/templates" />
       <recent name="$PROJECT_DIR$/src/theocourtdotcom/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -125,8 +130,19 @@
       <updated>1711747697061</updated>
       <workItem from="1711747698778" duration="58000" />
       <workItem from="1711747765472" duration="9985000" />
-      <workItem from="1711805482371" duration="8727000" />
+      <workItem from="1711805482371" duration="12664000" />
+      <workItem from="1711878473453" duration="3041000" />
+      <workItem from="1711993575346" duration="3677000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1711822177312</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711822177312</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,5 +150,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>

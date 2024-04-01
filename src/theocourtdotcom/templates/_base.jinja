@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+    />
+
+    <title>theo court</title>
+    <meta
+            name="description"
+            content="My homepage as a developer studying in the Netherlands."
+    />
+</head>
+<body class="preload">
+
+<header>
+    <div id="title">
+        <h1>theo court <i>(he/him)</i></h1>
+        {% include "quote.jinja" %}
+    </div>
+{#    <nav>#}
+{#        {% macro nav_item(name, url) %}#}
+{#            <li>#}
+{#                <a href="{{ url }}">#}
+{#                    {{ name }}#}
+{#                </a>#}
+{#            </li>#}
+{#        {% endmacro %}#}
+{#        <ul>#}
+{#            {{ nav_item("home", "/") }}#}
+{#            {{ nav_item("posts", "/posts") }}#}
+{#            {{ nav_item("about", "/about") }}#}
+{#            {{ nav_item("projects", "/projects") }}#}
+{#        </ul>#}
+{#    </nav>#}
+</header>
+
+<main>
+    {% block content %}
+    {% endblock content %}
+</main>
+
+<footer>
+    © 2024 Theo Court
+</footer>
+</body>
+</html>

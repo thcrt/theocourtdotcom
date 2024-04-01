@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+    /* Include border and padding in size calculation */
+    /* See https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing#sect1 */
+    box-sizing: border-box;
+
+    /* Remove default spacing */
+    margin: 0;
+    padding: 0;
+
+    /* Always inherit fonts */
+    font: inherit;
+
+    /* No default ugly borders */
+    border: none;
+
+    /* Use smooth scrolling */
+    scroll-behavior: smooth;
+
+    /* Disable animations, transitions and smooth scrolling if reduced motion is requested */
+    @media (prefers-reduced-motion: reduce) {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+html {
+    /* Don't inflate font sizes
+       See https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/ */
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+
+    /* Make default line height a bit bigger */
+    line-height: 1.5;
+
+    /* Use some nice text styles */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    /* Make sure the body at least fills the viewport height */
+    min-height: 100svh;
+}
+
+canvas, embed, iframe, img, object, picture, svg, video {
+    /* Position media elements with block by default */
+    display: block;
+    max-width: 100%;
+}
+
+textarea:not([rows]) {
+    /* Avoid textarea elements starting out very short */
+    min-height: 10em
+}
+
+:focus:not(:focus-visible) {
+    /* Only show focus ring when the browser deems it necessary
+       See https://css-tricks.com/the-focus-visible-trick/ */
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, button, input, label {
+    /* Set shorter line heights on headings and interactive elements */
+    line-height: 1.1;
+}
+
+i, em {
+    font-style: italic;
+}
+
+b, strong {
+    font-weight: bolder;
+}
+
+a {
+        &:is(main *) {
+            color: hsl(221 100% 81%);
+            text-decoration: underline solid color-mix(in hsl, currentcolor 30%, transparent) 10%;
+        }
+        &:not(main *) {
+            color: inherit;
+            text-decoration: none;
+        }
+
+		transition: all ease 0.1s;
+
+        &:hover {
+            text-decoration-thickness: 20%;
+            text-decoration-color: hsl(221 100% 90%);
+            text-shadow: currentColor 0 0 1rem;
+        }
+    }
+
+ul:not(main *) {
+    list-style: none;
+}

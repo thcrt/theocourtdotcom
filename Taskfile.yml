@@ -7,9 +7,6 @@ tasks:
     sources:
       - "pyproject.toml"
       - "vite/package.json"
-    generates:
-      - "vite/node_modules"
-      - ".venv"
     cmds:
       - "rye sync"
       - "rye run flask --app theocourtdotcom vite install"

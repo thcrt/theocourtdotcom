@@ -10,10 +10,10 @@ def create_app() -> f.app:
 
     @app.route("/")
     def index() -> str:
-        return f.render_template("index.j2")
+        return f.render_template("index.jinja")
 
     @app.route("/quote")
     def quote() -> str:
-        return f.render_template("quote.j2")
+        return f.render_template("quote.jinja")
 
     return app
