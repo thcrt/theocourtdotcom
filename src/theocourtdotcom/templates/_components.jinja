@@ -1,0 +1,8 @@
+{% macro button(link, src, alt) -%}
+    <a href="{{ link }}">
+        <img
+            src="{{ url_for('static', filename='buttons/'+src) }}"
+            alt="{{ alt }}"
+        />
+    </a>
+{%- endmacro %}
